@@ -1,0 +1,46 @@
+// The program input for token_2049/src/main.leo
+[mint]
+amount: u64 = 100u64; 
+
+[transfer]
+reciever: address = aleo17h40y0gyq5hcewdvk9df4gq32v84k5gfyw30yrx53vmxv73mwgpsmp439c;
+amount:u64 = 100u64;
+input: Token = Token{
+  owner: aleo17h40y0gyq5hcewdvk9df4gq32v84k5gfyw30yrx53vmxv73mwgpsmp439c,
+  balance: 100u64,
+  _nonce: 3118089860906832671605341564141707568908358130912661910688196511845114652731group
+};
+
+
+[transfer_private_to_public]
+reciever: address = aleo17h40y0gyq5hcewdvk9df4gq32v84k5gfyw30yrx53vmxv73mwgpsmp439c;
+amount:u64 = 100u64;
+input: Token = Token{
+  owner: aleo17h40y0gyq5hcewdvk9df4gq32v84k5gfyw30yrx53vmxv73mwgpsmp439c,
+  balance: 100u64,
+  _nonce: 3118089860906832671605341564141707568908358130912661910688196511845114652731group
+};
+
+[transfer_public]
+reciever:address = aleo17hyqfrj4c38t6fdlamz39raltgxsjsvju77f6xgj9rw0g8xev5ysfvfwtp;
+amount:u64 = 50u64;
+
+[transfer_public_to_private]
+reciever:address = aleo17h40y0gyq5hcewdvk9df4gq32v84k5gfyw30yrx53vmxv73mwgpsmp439c;
+amount:u64 = 100u64;
+
+[join]
+input: Token = Token{
+  owner: aleo17h40y0gyq5hcewdvk9df4gq32v84k5gfyw30yrx53vmxv73mwgpsmp439c,
+  balance: 50u64,
+  _nonce: 3118089860906832671605341564141707568908358130912661910688196511845114652731group
+};
+input_two: Token = Token{
+  owner: aleo17h40y0gyq5hcewdvk9df4gq32v84k5gfyw30yrx53vmxv73mwgpsmp439c,
+  balance: 100u64,
+  _nonce: 3118089860906832671605341564141707568908358130912661910688196511845114652731group
+};
+
+
+
+
